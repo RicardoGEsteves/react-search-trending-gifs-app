@@ -1,0 +1,9 @@
+{
+  "short_name": "TRENDGIFY",
+  "name": "Gifs Search App",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#000000",
+  "autor": "Ricardo Esteves"
+}

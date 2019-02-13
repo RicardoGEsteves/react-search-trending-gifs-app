@@ -1,0 +1,21 @@
+.gifRoute_container {
+  @include columnContent_center();
+  margin-top: $measures-5;
+  @include gifAnimation();
+  .gif_image {
+    margin-bottom: $measures-4;
+  }
+  .backButton {
+    @include flexRowCenter();
+    text-decoration: none;
+    &_button {
+      font-size: $fontSize-medium;
+      font-weight: $fontXL;
+      border: none;
+      background-image: $background-gradient;
+      color: $dark;
+      padding: $measures-2;
+      cursor: pointer;
+    }
+  }
+}

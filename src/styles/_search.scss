@@ -1,0 +1,43 @@
+.search {
+  @include paddingMarginContainers();
+  &_group {
+    @include rowContent_center();
+    &Form {
+      @include flexColumn();
+      width: 100%;
+      &Input {
+        border: none;
+        padding: 1.62em;
+        &:hover {
+          border: none;
+        }
+      }
+    }
+    &Button {
+      @include flexColumn();
+      background-image: linear-gradient(
+        45deg,
+        #f2553a 0%,
+        #f2553a 42%,
+        #812cf7 86%,
+        #812cf7 100%
+      );
+      padding: $measures-3;
+      border: none;
+      cursor: pointer;
+      &:hover {
+        background-image: linear-gradient(
+          135deg,
+          #42f486 0%,
+          #42f486 28%,
+          #30bef2 59%,
+          #30bef2 100%
+        );
+        opacity: 0.8;
+      }
+      i {
+        color: $white;
+      }
+    }
+  }
+}

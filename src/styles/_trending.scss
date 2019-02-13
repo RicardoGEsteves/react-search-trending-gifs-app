@@ -1,0 +1,15 @@
+.containerGifs {
+    @include paddingMarginContainers();
+    @include flexColumn();
+    @include contentStartCenter();
+    &_header {
+        color: $white;
+        font-weight: $fontL;
+        font-size: $fontSize-medium;
+    }
+    &_gifs {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+    }
+}

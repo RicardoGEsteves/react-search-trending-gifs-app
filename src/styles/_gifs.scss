@@ -1,0 +1,48 @@
+.containerGif {
+  @include flexColumn();
+  @include contentStartCenter();
+  @include gifAnimation();
+  margin: $measures-1;
+  padding: $measures-2;
+  background-image: $background-gradient;
+  color: $white;
+  flex-grow: 1;
+  .gif_username {
+    @include flexRowCenter();
+    &By {
+      font-size: $fontSize-small;
+      font-weight: $fontL;
+    }
+    &Name {
+      font-size: $fontSize-xSmall;
+      font-weight: $fontS;
+    }
+  }
+  .gif_title {
+    @include flexRowCenter();
+    i {
+    }
+    &Gif {
+      font-size: $fontSize-small;
+      font-weight: $fontL;
+    }
+    &Title {
+      font-size: $fontSize-xSmall;
+      font-weight: $fontS;
+    }
+  }
+  .gif_link {
+    @include flexRowCenter();
+    text-decoration: none;
+    &Button {
+      font-size: $fontSize-small;
+      font-weight: $fontL;
+      border: none;
+      background-color: $dark;
+      color: $white;
+      padding: $measures-2;
+      width: 100%;
+      cursor: pointer;
+    }
+  }
+}

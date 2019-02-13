@@ -1,0 +1,75 @@
+.navbar {
+  @include paddingMarginContainers();
+  @include rowContent_spaceBetween();
+  color: $white;
+  &_itemBrand {
+    font-size: $fontSize-large;
+    font-weight: $fontXL;
+  }
+  &_item {
+    font-size: $fontSize-small;
+    font-weight: $fontL;
+  }
+  .borderBottom {
+    &-blue {
+      border-bottom: 3px solid $blue;
+      &:hover {
+        background-image: linear-gradient(
+          to right,
+          #30bef2 0%,
+          #30bef2 33%,
+          #42f486 70%,
+          #42f486 100%
+        );
+      }
+    }
+    &-green {
+      border-bottom: 3px solid $green;
+      &:hover {
+        background-image: linear-gradient(
+          to right,
+          #42f486 0%,
+          #42f486 29%,
+          #812cf7 77%,
+          #812cf7 100%
+        );
+      }
+    }
+    &-violet {
+      border-bottom: 3px solid $violet;
+      &:hover {
+        background-image: linear-gradient(
+          to right,
+          #812cf7 0%,
+          #812cf7 29%,
+          #f2553a 67%,
+          #f2553a 100%
+        );
+      }
+    }
+    &-red {
+      border-bottom: 3px solid $redish;
+      &:hover {
+        background-image: linear-gradient(
+          to right,
+          #f2553a 0%,
+          #f2553a 29%,
+          #f2e82e 67%,
+          #f2e82e 100%
+        );
+      }
+    }
+    &-yellow {
+      border-bottom: 3px solid $yellow;
+      &:hover {
+        background-image: linear-gradient(
+          to right,
+          #f2e82e 0%,
+          #f2e82e 35%,
+          #30bef2 72%,
+          #30bef2 100%
+        );
+      }
+    }
+  }
+}

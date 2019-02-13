@@ -1,0 +1,74 @@
+// flex row
+@mixin flexRow {
+  display: flex;
+  flex-direction: row;
+}
+
+// flex column
+@mixin flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+// content x & y center
+@mixin contentCenter {
+  justify-content: center;
+  align-items: center;
+}
+
+// content x spaceBetween & y center
+@mixin contentSpaceBetween {
+  justify-content: space-between;
+  align-items: center;
+}
+
+// content x start y center
+@mixin contentStartCenter {
+  justify-content: flex-start;
+  align-content: center;
+}
+
+//flex row center
+@mixin flexRowCenter {
+  @include flexRow();
+  align-items: center;
+}
+
+// flex row x & y center
+@mixin rowContent_center() {
+  @include flexRow();
+  @include contentCenter();
+}
+
+// flex column x & y center
+@mixin columnContent_center() {
+  @include flexColumn();
+  @include contentCenter();
+}
+
+// flex row x spaceBetween & y center
+@mixin rowContent_spaceBetween() {
+  @include flexRow();
+  @include contentSpaceBetween();
+}
+
+// flex column x spaceBetween & y center
+@mixin columnContent_spaceBetween() {
+  @include flexColumn();
+  @include contentSpaceBetween();
+}
+
+// gif container
+@mixin gifAnimation {
+  transition: transform 0.2s;
+  :hover {
+    transform: scale(1.05);
+  }
+}
+
+// set padding & margin
+@mixin paddingMarginContainers {
+  padding: $measures-1;
+  margin: 0 $measures-5;
+}
+

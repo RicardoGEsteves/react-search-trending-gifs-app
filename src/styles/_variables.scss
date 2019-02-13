@@ -1,0 +1,38 @@
+// colors
+$white: #fff;
+$dark: #212121;
+$blue: #30bef2;
+$green: #42f486;
+$violet: #812cf7;
+$redish: #f2553a;
+$yellow: #f2e82e;
+
+// background
+$background-gradient: linear-gradient(
+  to right,
+  #30bef2,
+  #42f486,
+  #812cf7,
+  #f2553a,
+  #f2e82e
+);
+
+// font size
+$fontSize-xSmall: 0.6em;
+$fontSize-small: 0.825em;
+$fontSize-medium: 1.75em;
+$fontSize-large: 2.5em;
+
+// font weight
+$fontXS: 100;
+$fontS: 300;
+$fontM: 400;
+$fontL: 500;
+$fontXL: 700;
+
+// measures 10px 15px 20px 30px 50px
+$measures-1: 0.625em;
+$measures-2: 0.938em;
+$measures-3: 1.25em;
+$measures-4: 1.875em;
+$measures-5: 6.25em;
