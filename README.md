@@ -1,5 +1,5 @@
 # This is a react app that use giphy api to get the trending gifs and where you can search for any gif from any category
-To be abble to start this app you need to get an api key from giphy and change it on context.js on the get request
+### To be abble to start this app you need to get an api key from giphy and change it on context.js on the get request
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
